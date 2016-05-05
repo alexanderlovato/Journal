@@ -32,6 +32,8 @@ class EntryController {
         
         if let entryIndex = entries.indexOf(entry) {
             entries.removeAtIndex(entryIndex)
+            
+            self.saveToPersistentStorage()
         }
         
         
