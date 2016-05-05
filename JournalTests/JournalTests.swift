@@ -6,7 +6,7 @@
 //  Copyright © 2015 DevMountain. All rights reserved.
 //
 
-import XCTest
+/* import XCTest
 @testable import Journal
 
 class JournalTests: XCTestCase {
@@ -92,4 +92,4 @@ class JournalTests: XCTestCase {
 //        controller.removeEntry(testEntry)
 //    }
     
-}
+} */

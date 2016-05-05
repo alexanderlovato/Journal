@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		68816AC81BBB5405000569CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816AC71BBB5405000569CE /* AppDelegate.swift */; };
-		68816ACA1BBB5405000569CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816AC91BBB5405000569CE /* ViewController.swift */; };
 		68816ACD1BBB5405000569CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68816ACB1BBB5405000569CE /* Main.storyboard */; };
 		68816ACF1BBB5405000569CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68816ACE1BBB5405000569CE /* Assets.xcassets */; };
 		68816AD21BBB5405000569CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68816AD01BBB5405000569CE /* LaunchScreen.storyboard */; };
-		68816ADD1BBB5406000569CE /* JournalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816ADC1BBB5406000569CE /* JournalTests.swift */; };
-		68816AE81BBB5406000569CE /* JournalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816AE71BBB5406000569CE /* JournalUITests.swift */; };
+		FAE637F31CD5E2FE008FC065 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE637F21CD5E2FE008FC065 /* Entry.swift */; };
+		FAE637F51CD5E489008FC065 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE637F41CD5E489008FC065 /* EntryController.swift */; };
+		FAE637F61CD6867F008FC065 /* JournalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816ADC1BBB5406000569CE /* JournalTests.swift */; };
+		FAE637F81CD686E8008FC065 /* JournalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816AE71BBB5406000569CE /* JournalUITests.swift */; };
+		FAE637FA1CD688DD008FC065 /* EntryListTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE637F91CD688DD008FC065 /* EntryListTableTableViewController.swift */; };
+		FAE637FC1CD6B5BB008FC065 /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE637FB1CD6B5BB008FC065 /* EntryDetailViewController.swift */; };
+		FAE638381CD9B63B008FC065 /* Deadpool.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAE638371CD9B63B008FC065 /* Deadpool.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,6 @@
 /* Begin PBXFileReference section */
 		68816AC41BBB5405000569CE /* Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68816AC71BBB5405000569CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		68816AC91BBB5405000569CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		68816ACC1BBB5405000569CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		68816ACE1BBB5405000569CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68816AD11BBB5405000569CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,11 @@
 		68816AE31BBB5406000569CE /* JournalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JournalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68816AE71BBB5406000569CE /* JournalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalUITests.swift; sourceTree = "<group>"; };
 		68816AE91BBB5406000569CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAE637F21CD5E2FE008FC065 /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		FAE637F41CD5E489008FC065 /* EntryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
+		FAE637F91CD688DD008FC065 /* EntryListTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EntryListTableTableViewController.swift; path = ../EntryListTableTableViewController.swift; sourceTree = "<group>"; };
+		FAE637FB1CD6B5BB008FC065 /* EntryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
+		FAE638371CD9B63B008FC065 /* Deadpool.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Deadpool.jpg; path = ../../../Pictures/Deadpool.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,8 @@
 		68816ABB1BBB5405000569CE = {
 			isa = PBXGroup;
 			children = (
+				FAE637F21CD5E2FE008FC065 /* Entry.swift */,
+				FAE637F41CD5E489008FC065 /* EntryController.swift */,
 				68816AC61BBB5405000569CE /* Journal */,
 				68816ADB1BBB5406000569CE /* JournalTests */,
 				68816AE61BBB5406000569CE /* JournalUITests */,
@@ -98,9 +108,11 @@
 			isa = PBXGroup;
 			children = (
 				68816AC71BBB5405000569CE /* AppDelegate.swift */,
-				68816AC91BBB5405000569CE /* ViewController.swift */,
+				FAE637F91CD688DD008FC065 /* EntryListTableTableViewController.swift */,
 				68816ACB1BBB5405000569CE /* Main.storyboard */,
+				FAE637FB1CD6B5BB008FC065 /* EntryDetailViewController.swift */,
 				68816ACE1BBB5405000569CE /* Assets.xcassets */,
+				FAE638371CD9B63B008FC065 /* Deadpool.jpg */,
 				68816AD01BBB5405000569CE /* LaunchScreen.storyboard */,
 				68816AD31BBB5405000569CE /* Info.plist */,
 			);
@@ -192,6 +204,7 @@
 				TargetAttributes = {
 					68816AC31BBB5405000569CE = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 5VFNPXHUA5;
 					};
 					68816AD71BBB5406000569CE = {
 						CreatedOnToolsVersion = 7.0;
@@ -231,6 +244,7 @@
 				68816AD21BBB5405000569CE /* LaunchScreen.storyboard in Resources */,
 				68816ACF1BBB5405000569CE /* Assets.xcassets in Resources */,
 				68816ACD1BBB5405000569CE /* Main.storyboard in Resources */,
+				FAE638381CD9B63B008FC065 /* Deadpool.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,7 +269,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68816ACA1BBB5405000569CE /* ViewController.swift in Sources */,
+				FAE637F31CD5E2FE008FC065 /* Entry.swift in Sources */,
+				FAE637FA1CD688DD008FC065 /* EntryListTableTableViewController.swift in Sources */,
+				FAE637F61CD6867F008FC065 /* JournalTests.swift in Sources */,
+				FAE637F81CD686E8008FC065 /* JournalUITests.swift in Sources */,
+				FAE637F51CD5E489008FC065 /* EntryController.swift in Sources */,
+				FAE637FC1CD6B5BB008FC065 /* EntryDetailViewController.swift in Sources */,
 				68816AC81BBB5405000569CE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,7 +283,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68816ADD1BBB5406000569CE /* JournalTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +290,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68816AE81BBB5406000569CE /* JournalUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,10 +415,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Journal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.devmtn.Journal;
+				PRODUCT_BUNDLE_IDENTIFIER = NonsenseInc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -409,10 +429,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Journal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.devmtn.Journal;
+				PRODUCT_BUNDLE_IDENTIFIER = NonsenseInc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -483,6 +506,7 @@
 				68816AEE1BBB5406000569CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		68816AEF1BBB5406000569CE /* Build configuration list for PBXNativeTarget "JournalTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +515,7 @@
 				68816AF11BBB5406000569CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		68816AF21BBB5406000569CE /* Build configuration list for PBXNativeTarget "JournalUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +524,7 @@
 				68816AF41BBB5406000569CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

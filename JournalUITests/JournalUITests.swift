@@ -6,7 +6,7 @@
 //  Copyright © 2015 DevMountain. All rights reserved.
 //
 
-import XCTest
+/* import XCTest
 
 class JournalUITests: XCTestCase {
     
@@ -66,4 +66,4 @@ class JournalUITests: XCTestCase {
     }
     
         
-}
+} /**/*/
